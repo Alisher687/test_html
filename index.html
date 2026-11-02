@@ -1,0 +1,142 @@
+Ошибка возникла из-за текста-инструкции и Markdown-ограждений, которые попали в файл перед `<!DOCTYPE html>`. Удалите всё содержимое `index.html` и вставьте чистый HTML:
+
+````html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Личное резюме Алексея Иванова">
+    <title>Резюме — Алексей Иванов</title>
+</head>
+<body>
+    <!-- Header: имя, краткое описание и навигация -->
+    <header>
+        <h1>Алексей Иванов</h1>
+        <p>Начинающий веб-разработчик, изучаю современные веб-технологии.</p>
+
+        <nav aria-label="Навигация по резюме">
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#personal">Личная информация</a></li>
+                <li><a href="#education">Образование</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#experience">Опыт работы</a></li>
+                <li><a href="#hobbies">Хобби</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Обо мне: краткая информация, возраст, город и дата рождения -->
+        <section id="about">
+            <h2>Обо мне</h2>
+            <p>
+                Ответственный и любознательный специалист. Люблю учиться,
+                находить практичные решения и работать над новыми проектами.
+            </p>
+            <ul>
+                <li><strong>Возраст:</strong> 22 года</li>
+                <li><strong>Город:</strong> Шымкент</li>
+                <li><strong>Дата рождения:</strong> 15 мая 2004 года</li>
+            </ul>
+        </section>
+
+        <!-- Личная информация -->
+        <section id="personal">
+            <h2>Личная информация</h2>
+            <ul>
+                <li><strong>Имя:</strong> Алексей</li>
+                <li><strong>Фамилия:</strong> Иванов</li>
+                <li><strong>Телефон:</strong> <a href="tel:+77001234567">+7 700 123 45 67</a></li>
+                <li><strong>Email:</strong> <a href="mailto:alex.ivanov@example.com">alex.ivanov@example.com</a></li>
+                <li><strong>Адрес:</strong> Шымкент, Казахстан</li>
+            </ul>
+        </section>
+
+        <!-- Образование -->
+        <section id="education">
+            <h2>Образование</h2>
+            <article>
+                <h3>Южно-Казахстанский университет</h3>
+                <p>Город: Шымкент</p>
+                <p>Годы обучения: 2022–2026</p>
+                <p>Специальность: информационные технологии</p>
+            </article>
+        </section>
+
+        <!-- Навыки: программирование, компьютер, языки и личные качества -->
+        <section id="skills">
+            <h2>Навыки</h2>
+
+            <h3>Программирование</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript — базовый уровень</li>
+            </ul>
+
+            <h3>Владение компьютером</h3>
+            <p>Уверенный пользователь ПК, Microsoft Office, Visual Studio Code.</p>
+
+            <h3>Знание языков</h3>
+            <ul>
+                <li>Русский — свободно</li>
+                <li>Казахский — свободно</li>
+                <li>Английский — базовый уровень</li>
+            </ul>
+
+            <h3>Личные качества</h3>
+            <ul>
+                <li>Ответственность</li>
+                <li>Внимательность</li>
+                <li>Командная работа</li>
+                <li>Обучаемость</li>
+            </ul>
+        </section>
+
+        <!-- Опыт работы -->
+        <section id="experience">
+            <h2>Опыт работы</h2>
+            <article>
+                <h3>Учебный проект «Мой первый сайт»</h3>
+                <p><strong>Должность:</strong> стажёр-веб-разработчик</p>
+                <p><strong>Период:</strong> 2025–2026</p>
+                <h4>Обязанности</h4>
+                <ul>
+                    <li>Создание веб-страниц на HTML и CSS.</li>
+                    <li>Проверка отображения страниц на разных устройствах.</li>
+                    <li>Исправление ошибок в разметке.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Хобби и интересы -->
+        <section id="hobbies">
+            <h2>Хобби</h2>
+            <p>
+                Изучение технологий, чтение, прогулки, настольные игры
+                и создание небольших веб-проектов.
+            </p>
+        </section>
+
+        <!-- Контакты и ссылки на социальные сети -->
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <ul>
+                <li><a href="tel:+77001234567">Телефон: +7 700 123 45 67</a></li>
+                <li><a href="mailto:alex.ivanov@example.com">Email: alex.ivanov@example.com</a></li>
+                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                <li><a href="https://github.com/">GitHub</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer: подпись и год -->
+    <footer>
+        <p>© 2026 Алексей Иванов</p>
+    </footer>
+</body>
+</html>
+````
